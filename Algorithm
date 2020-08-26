@@ -1,0 +1,99 @@
+3.1 ALGORITHM REGARDING DOUBLY LINKED LIST:
+
+
+•	Insert Operation : At The Beginning
+1.	Start
+2.	If Ptr = Null : Overflow -> End Algorithm
+3.	Set New_Node = Ptr
+4.	Set Ptr = Ptr -> Next
+5.	Set New_Node -> Data = Val
+6.	Set New_Node -> Prev = Null
+7.	Set New_Node -> Next = Start
+8.	Set Head -> Prev = New_Node
+9.	Set Head = New_Node
+10.	End
+
+•	Insert Operation : At The End
+1.	Start
+2.	If Ptr = Null : Overflow -> End Algorithm
+3.	Set New_Node = Ptr
+4.	Set Ptr = Ptr -> Next
+5.	Set New_Node -> Data = Val
+6.	Set New_Node -> Next = Null
+7.	Set Temp = Start
+8.	Repeat Step 9 While Temp -> Next != Null
+9.	Set Temp = Temp -> Next {End Of Loop}
+10.	Set Temp -> Next = New_Node
+11.	Set New_Node -> Prev = Temp
+12.	End
+
+•	Delete Operation : At The Beginning
+1.	Start
+2.	If Head = Null : Underflow -> End Algorithm
+3.	Set Ptr = Head
+4.	Set Head = Head -> Next
+5.	Set Head -> Prev = Null
+6.	Free Ptr
+7.	End
+
+•	Delete Operation : At The End
+1.	Start
+2.	If   Head = Null : Underflow -> End Algorithm
+3.	Set Temp = Head
+4.	Repeat Step 5  While Temp->Next != Null
+5.	Set Temp = Temp->Next {End Of Loop}
+6.	Set Temp ->Prev-> Next = Null
+7.	Free Temp
+8.	End
+
+3.1 ALGORITHM REGARDING CIRCULAR LINKED LIST:
+
+•	Insert Operation : At The Beginning
+1.	Start
+2.	If Ptr = Null : Overflow -> End Algorithm
+3.	Set New_Node = Ptr
+4.	Set Ptr = Ptr -> Next
+5.	Set New_Node -> Data = Val
+6.	Set Temp = Head
+7.	Repeat Step 9 While Temp -> Next != Head
+8.	Set Temp = Temp -> Next { End Of Loop}
+9.	Set New_Node -> Next = Head
+10.	Set Temp -> Next = New_Node
+11.	Set Head = New_Node
+12.	End
+
+•	Insert Operation : At The End
+1.	Start
+2.	If Ptr = Null : Overflow -> End Algorithm
+3.	Set New_Node = Ptr
+4.	Set Ptr = Ptr -> Next
+5.	Set New_Node -> Data = Val
+6.	Set New_Node -> Next = Head
+7.	Set Temp = Head
+8.	Repeat Step 9 While Temp -> Next != Head
+9.	Set Temp = Temp -> Next {End Of Loop}
+10.	Set Temp -> Next = New_Node
+11.	End
+
+•	Delete Operation : At The Beginning
+1.	Start
+2.	If Head = Null : Underflow -> End Algorithm
+3.	Set Ptr = Head
+4.	Repeat Step 5 While Ptr -> Next != Head
+5.	Set Ptr = Ptr ->Next {End Of Loop}
+6.	Set Ptr → Next = Head -> Next
+7.	Free Head
+8.	Set Head = Ptr -> Next
+9.	End
+
+•	Delete Operation : At The End
+1.	Start
+2.	If   Head = Null : Underflow -> End Algorithm
+3.	 Set Ptr = Head
+4.	Repeat Steps 5 And 6 While Ptr -> Next != Head
+5.	Set Preptr = Ptr
+6.	Set Ptr = Ptr -> Next {End Of Loop}
+7.	Set Preptr -> Next = Head
+8.	Free Ptr
+9.	End
+
