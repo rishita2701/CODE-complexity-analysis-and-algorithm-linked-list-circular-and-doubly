@@ -1,0 +1,35 @@
+•	Space Complexity : O(n)
+
+•	Time Complexity :
+
+	Insertion :
+1.	Best Case – Ω(1)
+2.	Average Case – θ(1)
+3.	Worst Case – O(1)
+
+
+	Deletion :
+
+1.	Best Case - Ω(1)
+2.	Average Case - θ(1)
+3.	Worst Case - O(1)
+
+
+
+5.2. COMPLEXITY ANALYSIS FOR CIRCULAR LINKED LIST:
+
+•	Space Complexity : O(n)
+
+•	Time Complexity :
+
+	Insertion :
+1.	Best Case – Ω(1)
+2.	Average Case – θ(1)
+3.	Worst Case – O(1)
+
+	Deletion :
+
+1.	Best Case - Ω(1)
+2.	Average Case - θ(1)
+3.	Worst Case - O(1)
+
